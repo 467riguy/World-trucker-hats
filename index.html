@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trucker Hats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        main {
+            margin-top: 80px;
+            padding: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ff5252;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+            }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌍 World Trucker Hats</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>World Trucker Hats</h1>
+            <p>Express yourself with our premium collection of trucker hats from around the globe!</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </section>
+
+        <section id="products">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Featured Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Classic+Trucker" alt="Classic Trucker Hat">
+                    <h3>Classic Trucker</h3>
+                    <p>The timeless mesh-back design that started it all. Perfect for any adventure.</p>
+                    <div class="price">$24.99</div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/ffa500/ffffff?text=World+Tour" alt="World Tour Hat">
+                    <h3>World Tour Edition</h3>
+                    <p>Show your global spirit with flags from around the world embroidered on the front.</p>
+                    <div class="price">$29.99</div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/4ecdc4/ffffff?text=Custom+Design" alt="Custom Design Hat">
+                    <h3>Custom Design</h3>
+                    <p>Create your own unique trucker hat with our custom design service.</p>
+                    <div class="price">$34.99</div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/45b7d1/ffffff?text=Retro+Vibes" alt="Retro Vibes Hat">
+                    <h3>Retro Vibes</h3>
+                    <p>Throwback designs that bring the 80s and 90s back to life.</p>
+                    <div class="price">$27.99</div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/f7dc6f/ffffff?text=Outdoor+Adventure" alt="Outdoor Adventure Hat">
+                    <h3>Outdoor Adventure</h3>
+                    <p>Built for the wild with moisture-wicking technology and UV protection.</p>
+                    <div class="price">$32.99</div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/bb8fce/ffffff?text=Minimalist" alt="Minimalist Hat">
+                    <h3>Minimalist Collection</h3>
+                    <p>Clean, simple designs for those who prefer understated style.</p>
+                    <div class="price">$26.99</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="background: white; padding: 3rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 3rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">About World Trucker Hats</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">
+                Founded in 2020, World Trucker Hats brings together the best trucker hat designs from every corner of the globe. 
+                We believe that a great hat is more than just accessories – it's a statement of who you are and where you've been. 
+                Our mission is to provide high-quality, stylish trucker hats that let you express your unique personality and adventures.
+            </p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 World Trucker Hats. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+            <a href="#">📧</a>
+        </div>
+        <p style="margin-top: 1rem;">Contact us: info@worldtruckerhats.com | 1-800-TRUCKER</p>
+    </footer>
+</body>
+</html>
